@@ -300,3 +300,16 @@ basic.showLeds(`
     . . . . .
     `)
 music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
+basic.forever(function () {
+    if (input.isGesture(Gesture.LogoDown)) {
+        basic.showLeds(`
+            . . # . .
+            . . # . .
+            # . # . #
+            . # # # .
+            . . # . .
+            `)
+        basic.pause(200)
+        basic.clearScreen()
+    }
+})
