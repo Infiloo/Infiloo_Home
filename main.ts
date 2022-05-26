@@ -66,6 +66,16 @@ input.onButtonPressed(Button.A, function () {
         `)
     basic.showString("" + (input.lightLevel()))
 })
+input.onButtonPressed(Button.AB, function () {
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        # . # . #
+        . . # . .
+        . . # . .
+        `)
+    basic.showString("" + (input.compassHeading()))
+})
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
         . # # # #
@@ -252,6 +262,7 @@ input.onButtonPressed(Button.B, function () {
         # # # # # # # # # #
         `).scrollImage(1, 200)
 })
+input.calibrateCompass()
 music.setBuiltInSpeakerEnabled(true)
 basic.showLeds(`
     . . . . .
