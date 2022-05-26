@@ -57,6 +57,14 @@ input.onButtonPressed(Button.A, function () {
         . . . . #
         `)
     basic.showString("" + (input.acceleration(Dimension.X)))
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
+        `)
+    basic.showString("" + (input.lightLevel()))
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
