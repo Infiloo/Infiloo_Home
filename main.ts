@@ -332,6 +332,76 @@ basic.showLeds(`
     . . . . .
     `)
 music.startMelody(music.builtInMelody(Melodies.PowerUp), MelodyOptions.Once)
+images.createBigImage(`
+    . . . . # # . . . .
+    . . . # . . # . . .
+    . . # . . . . # . .
+    . # . . . . . . # .
+    # . . . . . . . . #
+    `).scrollImage(1, 200)
+images.createBigImage(`
+    . . . . # # . . . .
+    . . . # . . # . . .
+    . . # . . . . # . .
+    . # . . . . . . # .
+    # . . . . . . . . #
+    `).scrollImage(1, 200)
+images.createBigImage(`
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    # # # . # # # . # #
+    `).scrollImage(1, 200)
+images.createBigImage(`
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    . . . . . . . . . .
+    # . # # # . # # # .
+    `).scrollImage(1, 200)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    . . . . .
+    . # # # .
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    . . . . .
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    . . . . .
+    . . . . .
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    . . . . .
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    # # # # #
+    `)
+basic.showLeds(`
+    # # # # #
+    # . # . #
+    . # . # .
+    # . # . #
+    # # # # #
+    `)
 basic.forever(function () {
     if (input.isGesture(Gesture.LogoDown)) {
         basic.showLeds(`
