@@ -49,6 +49,14 @@ input.onButtonPressed(Button.A, function () {
         # . . . . . . . . #
         `).scrollImage(1, 200)
     basic.showString("" + (input.temperature()))
+    basic.showLeds(`
+        . . . . .
+        . # # # #
+        . . . . .
+        # # # . .
+        . . . . #
+        `)
+    basic.showString("" + (input.acceleration(Dimension.X)))
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
