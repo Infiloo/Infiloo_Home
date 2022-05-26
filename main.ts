@@ -294,7 +294,6 @@ input.onPinPressed(TouchPin.P1, function () {
     music.setVolume(0)
     basic.showString("" + (music.volume()))
 })
-input.calibrateCompass()
 music.setBuiltInSpeakerEnabled(true)
 basic.showLeds(`
     . . . . .

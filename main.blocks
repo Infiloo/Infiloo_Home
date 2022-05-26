@@ -1,4 +1,4 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id=".Y*i?PjYq5jg!z~(^0B1">meinBild</variable></variables><block type="pxt-on-start" id="3npJNj~CKZPfM(MNk$(r" x="-660" y="-619"><statement name="HANDLER"><block type="input_compass_calibrate" id="~5A5FtfU[u,_Gb,Z6J/I"><next><block type="music_set_built_in_speaker_enable" id="+%2@F0!Xss5=fPxNup/~"><value name="enabled"><shadow type="toggleOnOff" id="::GJusM^^Yw7Ts[s|E.L"><field name="on">true</field></shadow></value><next><block type="device_show_leds" id="u|K}XG!sep?TdQ{1@udA"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id=".Y*i?PjYq5jg!z~(^0B1">meinBild</variable></variables><block type="pxt-on-start" id="3npJNj~CKZPfM(MNk$(r" x="-660" y="-619"><statement name="HANDLER"><block type="music_set_built_in_speaker_enable" id="+%2@F0!Xss5=fPxNup/~"><value name="enabled"><shadow type="toggleOnOff" id="::GJusM^^Yw7Ts[s|E.L"><field name="on">true</field></shadow></value><next><block type="device_show_leds" id="u|K}XG!sep?TdQ{1@udA"><field name="LEDS">`
         . . . . . 
         . . . . . 
         # . . . . 
@@ -88,7 +88,7 @@
         . # . # . 
         # . # . # 
         # # # # #
-        `</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="]=tO?A=JWy{]8IxMw8UT" x="452" y="-642"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="F}lJYqC*Hs1ND,V##e,k"><field name="LEDS">`
+        `</field></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="]=tO?A=JWy{]8IxMw8UT" x="452" y="-642"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="F}lJYqC*Hs1ND,V##e,k"><field name="LEDS">`
         . . # . . 
         . # # # . 
         # # # # # 
