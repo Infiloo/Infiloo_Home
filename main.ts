@@ -68,13 +68,13 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
-        . . # . .
         . # # # .
         # . # . #
-        . . # . .
-        . . # . .
+        # . # . #
+        # . . . #
+        . # # # .
         `)
-    basic.showString("" + (input.compassHeading()))
+    basic.showString("" + (input.runningTimeMicros()))
 })
 input.onButtonPressed(Button.B, function () {
     basic.showLeds(`
