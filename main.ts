@@ -1,3 +1,40 @@
+input.onPinPressed(TouchPin.P0, function () {
+    images.createBigImage(`
+        . . . . . . . . # #
+        . . . . . . # # . .
+        . . . . # # . . . .
+        . . # # . . . . . .
+        # # . . . . . . . .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        # # . . . . . . . .
+        . . # # . . . . . .
+        . . . . # # . . . .
+        . . . . . . # # . .
+        . . . . . . . . # #
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . # # . . # # . .
+        # # . . # # . . # #
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . # # . . # # . .
+        # # . . # # . . # #
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . # # . . # # . .
+        # # # # # # # # # #
+        `).scrollImage(1, 200)
+})
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         . . # . .
