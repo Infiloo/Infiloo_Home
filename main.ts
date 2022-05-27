@@ -34,63 +34,6 @@ input.onPinPressed(TouchPin.P0, function () {
         . . # # . . # # . .
         # # # # # # # # # #
         `).scrollImage(1, 200)
-    images.createBigImage(`
-        # . . . # . . . # .
-        . # . # . # . # . #
-        . . # . . . # . . .
-        . # . # . # . # . #
-        # . . . # . . . # .
-        `).scrollImage(1, 200)
-    images.createBigImage(`
-        # . . . # . . . # .
-        . # . # . # . # . #
-        . . # . . . # . . .
-        . # . # . # . # . #
-        # . . . # . . . # .
-        `).scrollImage(1, 200)
-    images.createBigImage(`
-        # . . . # . . . # .
-        . # . # . # . # . #
-        . . # . . . # . . .
-        . # . # . # . # . #
-        # . . . # . . . # .
-        `).scrollImage(1, 200)
-    music.startMelody(music.builtInMelody(Melodies.Prelude), MelodyOptions.Once)
-    images.createBigImage(`
-        . # . . . . . # . #
-        . # . # . # . # . #
-        # # # # # # # # # #
-        # . # . # . # . # .
-        . . . . # . . . # .
-        `).scrollImage(1, 200)
-    images.createBigImage(`
-        . # . . . . . # . #
-        . # . # . # . # . #
-        # # # # # # # # # #
-        # . # . # . # . # .
-        . . . . # . . . # .
-        `).scrollImage(1, 200)
-    images.createBigImage(`
-        . # . . . . . # . #
-        . # . # . # . # . #
-        # # # # # # # # # #
-        # . # . # . # . # .
-        . . . . # . . . # .
-        `).scrollImage(1, 200)
-    images.createBigImage(`
-        . # . . . . . # . #
-        . # . # . # . # . #
-        # # # # # # # # # #
-        # . # . # . # . # .
-        . . . . # . . . # .
-        `).scrollImage(1, 200)
-    images.createBigImage(`
-        . # . . . . . # . #
-        . # . # . # . # . #
-        # # # # # # # # # #
-        # . # . # . # . # .
-        . . . . # . . . # .
-        `).scrollImage(1, 200)
 })
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
@@ -151,6 +94,14 @@ input.onButtonPressed(Button.A, function () {
         . . . . #
         `)
     basic.showString("" + (input.acceleration(Dimension.X)))
+    basic.showLeds(`
+        . . . . .
+        . # # # .
+        . # # # .
+        . # # # .
+        . . . . .
+        `)
+    basic.showString("" + (input.lightLevel()))
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -466,16 +417,5 @@ basic.forever(function () {
             `)
         basic.pause(200)
         basic.clearScreen()
-    }
-})
-basic.forever(function () {
-    if (input.soundLevel() == "Hallo".length) {
-        basic.showString("Hallo! Du")
-    } else if (input.soundLevel() == "Tschüss".length) {
-        basic.showString("Tschüss")
-    } else if (input.soundLevel() == "Was ist dein Name ".length) {
-        basic.showString("micro:bit")
-    } else {
-    	
     }
 })
