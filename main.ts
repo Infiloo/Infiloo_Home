@@ -151,14 +151,6 @@ input.onButtonPressed(Button.A, function () {
         . . . . #
         `)
     basic.showString("" + (input.acceleration(Dimension.X)))
-    basic.showLeds(`
-        . . . . .
-        . # # # .
-        . # # # .
-        . # # # .
-        . . . . .
-        `)
-    basic.showString("" + (input.lightLevel()))
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -463,39 +455,6 @@ basic.showLeds(`
     # . # . #
     # # # # #
     `)
-basic.forever(function () {
-    if (input.soundLevel() == 255) {
-        basic.showLeds(`
-            # . . . .
-            # . . . .
-            # . . . .
-            # . . . .
-            # # # # .
-            `)
-        basic.pause(1000)
-        basic.clearScreen()
-    } else if (input.soundLevel() == 127) {
-        basic.showLeds(`
-            # # . # #
-            # . # . #
-            # . . . #
-            # . . . #
-            # . . . #
-            `)
-        basic.pause(1000)
-        basic.clearScreen()
-    } else if (input.soundLevel() == 0) {
-        basic.showLeds(`
-            . # # # .
-            # . . . .
-            . # # # .
-            . . . . #
-            . # # # .
-            `)
-        basic.pause(1000)
-        basic.clearScreen()
-    }
-})
 basic.forever(function () {
     if (input.isGesture(Gesture.LogoDown)) {
         basic.showLeds(`
