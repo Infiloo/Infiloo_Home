@@ -1,13 +1,3 @@
-input.onPinPressed(TouchPin.P0, function () {
-    basic.showLeds(`
-        . . . . #
-        . # . # .
-        # # . . .
-        . # . # .
-        . . . . #
-        `)
-    basic.showString("" + (music.volume()))
-})
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         . . # . .
@@ -75,17 +65,6 @@ input.onButtonPressed(Button.A, function () {
         . . . . .
         `)
     basic.showString("" + (input.lightLevel()))
-})
-input.onPinPressed(TouchPin.P2, function () {
-    basic.showLeds(`
-        . . . . #
-        . # . # .
-        # # . . .
-        . # . # .
-        . . . . #
-        `)
-    music.setVolume(127)
-    basic.showString("" + (music.volume()))
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -282,17 +261,6 @@ input.onButtonPressed(Button.B, function () {
         . # . # # # # . # #
         # # # # # # # # # #
         `).scrollImage(1, 200)
-})
-input.onPinPressed(TouchPin.P1, function () {
-    basic.showLeds(`
-        # . . . #
-        . # . # .
-        # # # . .
-        . # . # .
-        # . . . #
-        `)
-    music.setVolume(0)
-    basic.showString("" + (music.volume()))
 })
 music.setBuiltInSpeakerEnabled(true)
 basic.showLeds(`
