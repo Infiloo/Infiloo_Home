@@ -34,6 +34,63 @@ input.onPinPressed(TouchPin.P0, function () {
         . . # # . . # # . .
         # # # # # # # # # #
         `).scrollImage(1, 200)
+    images.createBigImage(`
+        # . . . # . . . # .
+        . # . # . # . # . #
+        . . # . . . # . . .
+        . # . # . # . # . #
+        # . . . # . . . # .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        # . . . # . . . # .
+        . # . # . # . # . #
+        . . # . . . # . . .
+        . # . # . # . # . #
+        # . . . # . . . # .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        # . . . # . . . # .
+        . # . # . # . # . #
+        . . # . . . # . . .
+        . # . # . # . # . #
+        # . . . # . . . # .
+        `).scrollImage(1, 200)
+    music.startMelody(music.builtInMelody(Melodies.Prelude), MelodyOptions.Once)
+    images.createBigImage(`
+        . # . . . . . # . #
+        . # . # . # . # . #
+        # # # # # # # # # #
+        # . # . # . # . # .
+        . . . . # . . . # .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . # . . . . . # . #
+        . # . # . # . # . #
+        # # # # # # # # # #
+        # . # . # . # . # .
+        . . . . # . . . # .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . # . . . . . # . #
+        . # . # . # . # . #
+        # # # # # # # # # #
+        # . # . # . # . # .
+        . . . . # . . . # .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . # . . . . . # . #
+        . # . # . # . # . #
+        # # # # # # # # # #
+        # . # . # . # . # .
+        . . . . # . . . # .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . # . . . . . # . #
+        . # . # . # . # . #
+        # # # # # # # # # #
+        # . # . # . # . # .
+        . . . . # . . . # .
+        `).scrollImage(1, 200)
 })
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
@@ -406,6 +463,39 @@ basic.showLeds(`
     # . # . #
     # # # # #
     `)
+basic.forever(function () {
+    if (input.soundLevel() == 255) {
+        basic.showLeds(`
+            # . . . .
+            # . . . .
+            # . . . .
+            # . . . .
+            # # # # .
+            `)
+        basic.pause(1000)
+        basic.clearScreen()
+    } else if (input.soundLevel() == 127) {
+        basic.showLeds(`
+            # # . # #
+            # . # . #
+            # . . . #
+            # . . . #
+            # . . . #
+            `)
+        basic.pause(1000)
+        basic.clearScreen()
+    } else if (input.soundLevel() == 0) {
+        basic.showLeds(`
+            . # # # .
+            # . . . .
+            . # # # .
+            . . . . #
+            . # # # .
+            `)
+        basic.pause(1000)
+        basic.clearScreen()
+    }
+})
 basic.forever(function () {
     if (input.isGesture(Gesture.LogoDown)) {
         basic.showLeds(`
