@@ -509,3 +509,14 @@ basic.forever(function () {
         basic.clearScreen()
     }
 })
+basic.forever(function () {
+    if (input.soundLevel() == "Hallo".length) {
+        basic.showString("Hallo! Du")
+    } else if (input.soundLevel() == "Tschüss".length) {
+        basic.showString("Tschüss")
+    } else if (input.soundLevel() == "Was ist dein Name ".length) {
+        basic.showString("micro:bit")
+    } else {
+    	
+    }
+})
