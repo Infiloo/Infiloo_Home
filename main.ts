@@ -94,14 +94,6 @@ input.onButtonPressed(Button.A, function () {
         . . . . #
         `)
     basic.showString("" + (input.acceleration(Dimension.X)))
-    basic.showLeds(`
-        . . . . .
-        . # # # .
-        . # # # .
-        . # # # .
-        . . . . .
-        `)
-    basic.showString("" + (input.lightLevel()))
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
@@ -298,6 +290,63 @@ input.onButtonPressed(Button.B, function () {
         . # . # # # # . # #
         # # # # # # # # # #
         `).scrollImage(1, 200)
+})
+input.onPinPressed(TouchPin.P1, function () {
+    images.createBigImage(`
+        . . . . . . . . # #
+        . . . . . . # # . .
+        . . . . # # . . . .
+        . . # # . . . . . .
+        # # . . . . . . . .
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        # # . . . . . . . .
+        . . # # . . . . . .
+        . . . . # # . . . .
+        . . . . . . # # . .
+        . . . . . . . . # #
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . # # . . # # . .
+        # # . . # # . . # #
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . # # . . # # . .
+        # # . . # # . . # #
+        `).scrollImage(1, 200)
+    images.createBigImage(`
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . . . . . . . . .
+        . . # # . . # # . .
+        # # # # # # # # # #
+        `).scrollImage(1, 200)
+    basic.clearScreen()
+    turtle.setSpeed(1.1111111111111112)
+    turtle.home()
+    turtle.pen(TurtlePenMode.Down)
+    turtle.forward(2)
+    turtle.forward(1)
+    turtle.turnLeft()
+    turtle.forward(2)
+    turtle.turnLeft()
+    turtle.forward(2)
+    turtle.turnLeft()
+    turtle.forward(2)
+    turtle.turnRight()
+    turtle.forward(2)
+    turtle.turnRight()
+    turtle.forward(2)
+    turtle.turnLeft()
+    turtle.forward(2)
+    turtle.home()
+    turtle.pen(TurtlePenMode.Down)
 })
 music.setBuiltInSpeakerEnabled(true)
 basic.showLeds(`
